@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Add Products</h1>
+        <nav>
+            <ul>
+                <li><a href="manage_products.php">Manage Products</a></li>
+                <li><a href="admin_dashboard.php">Dashboard</   a></li>
+                <li><a href="admin_logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Add Product</h2>
+    <form action="add_product.php" method="post" enctype="multipart/form-data">
+        <label for="name">Product Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="price">Price:</label><br>
+        <input type="text" id="price" name="price"><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        <label for="image">Product Image:</label><br>
+        <input type="file" id="image" name="image"><br>
+        <!-- New dropdown menu for selecting category -->
+        <label for="category">Category:</label><br>
+        <select id="category" name="category">
+            <option value="Gift cards">Gift cards</option>
+            <option value="Ebooks">Ebooks</option>
+            <option value="Video Games">Video Games</option>
+            <!-- Add more options for different categories -->
+        </select><br>
+        <input type="submit" value="Add Product">
+    </form>
+</body>
+</html>

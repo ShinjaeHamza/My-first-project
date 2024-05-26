@@ -1,0 +1,452 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url('Images/Beige.webp'); /* Add your image here */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.logo img {
+  max-width: 120px; /* Adjust the max-width to change the size of the logo */
+  display: block; /* Ensure the logo is a block element */
+  margin: 0 auto; /* Center the logo horizontally */
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center; /* Align items horizontally at the center */
+  align-items: center; /* Align items vertically at the center */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.product-section {
+  padding: 20px;
+}
+
+.comment {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 0 0 30%; /* Adjust the width of each column as needed */
+  margin-bottom: 20px;
+}
+
+.product {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.product-image {
+  height: 200px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-details {
+  padding: 20px;
+}
+
+.product-details h3 {
+  margin-top: 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #4caf50; /* Change color as needed */
+}
+
+.add-to-cart {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: #45a049;
+}
+
+
+/* Basic styling */
+.secondary-banner {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.secondary-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .secondary-banner {
+    padding: 30px 0;
+  }
+}
+
+header {
+  background-color: beige;
+  color: #fff;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  max-width: 400px; /* Limit the width of the search bar */
+  margin: 0 auto; /* Center the search bar horizontally */
+}
+
+.search-bar input[type="text"] {
+  flex: 1; /* Let the input grow to take available space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #45a049;
+  border: 1px solid #45a049;
+}
+
+
+header {
+  background-color: beige;
+  color: #fff;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #45a049;
+  border: 1px solid #45a049;
+}
+.logo img {
+  width: 120px; /* Set the width and height to desired size */
+  height: 120px;
+  border-radius: 50%; /* Make it a circle */
+}
+.shopping-cart {
+  position: relative;
+}
+
+.cart-icon img {
+  width: 20px; /* Adjust the width of the icon as needed */
+  height: 20px; /* Adjust the height of the icon as needed */
+}
+
+.cart-icon {
+  display: inline-block;
+  position: relative;
+  margin-left: 20px; /* Adjust margin as needed */
+}
+
+.cart-items {
+  position: absolute;
+  top: -8px; /* Adjust vertical position as needed */
+  right: -8px; /* Adjust horizontal position as needed */
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 10px; /* Adjust font size as needed */
+}
+.phone-number {
+  font-size: 14px; /* Adjust font size as needed */
+  margin-left: 5px; /* Adjust spacing between cart icon and phone number */
+  color: #333;
+}
+.user-icon img {
+  width: 20px; /* Adjust the width of the icon as needed */
+  height: 20px; /* Adjust the height of the icon as needed */
+}
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+button[type="submit"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.comment {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  /* Adjust margin as needed */
+  font-weight: bold;
+  /* Make the comment bold */
+}
+
+.add-to-cart {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #45a049;
+}
+.secondary-banner {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.secondary-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .secondary-banner {
+    padding: 30px 0;
+  }
+}
+/* Making the website responsive
+ @media screen and (max-width: 768px) {
+      .menu {
+        display: none;
+      }
+
+      .menu-icon {
+        display: block;
+        cursor: pointer;
+      }
+
+      .menu-icon::before {
+        content: "\2630"; /* Unicode character for hamburger icon */
+        font-size: 24px;
+        
+      .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: beige;
+        padding: 10px 20px;
+        z-index: 1;
+      }
+
+      .menu.active li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      .search-bar {
+        flex: 1; /* Fill remaining space */
+      }
+
+      .search-bar input[type="text"] {
+        width: 100%;
+      }
+
+      .user-actions {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .cart-icon {
+        margin-top: 10px;
+      }
+      .username {
+        color: black;
+    }
